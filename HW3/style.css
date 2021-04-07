@@ -1,0 +1,118 @@
+
+
+body{
+    background-color: #21262d;
+}
+table:nth-child(3) tr td:nth-child(1) {
+    padding-left: 40px;
+}
+table tr td:nth-child(1), table tr th:nth-child(1) {
+    border-right: none;
+}
+table tr td:nth-child(2), table tr th:nth-child(2) {
+    border-left: none;
+}
+table tr:nth-child(1) th:nth-child(1) {
+    border-top-left-radius: 5px;
+}
+table tr:nth-child(1) th:nth-child(2) {
+    border-top-right-radius: 5px;
+}
+table tr:last-child td:nth-child(1) {
+    border-bottom-left-radius: 5px;
+}
+table tr:last-child td:nth-child(2) {
+    border-bottom-right-radius: 5px;
+}
+table th {
+    font-weight: 700;
+}
+table:nth-child(2) input {
+    float: left;
+    margin-right: 15px;
+}
+table {
+    margin: 70px ;
+    width: 800px;
+    color:white;
+    font-family: 'Arial';
+    text-align: left;
+    border-spacing: 0;
+    font-size: 13px;
+}
+table tr {
+    width: 100%;
+    height: 45px;
+}
+table tr td, table tr th {
+    width: 50%;
+    position: relative;
+    padding-left: 15px;
+    border: 1px solid #808080;
+}
+table tr:nth-child(1) th:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 6px solid white;
+    transform: translate(120%, 80%);
+}
+table tr td:nth-child(2) {
+    color:#BEBEBE;
+}
+table tr td:nth-child(2)::after {
+    content: '•••';
+    display: block;
+    color:white;
+    position: absolute;
+    font-size: 17px;
+    right: 0;
+    top: 0;
+    margin: 15px 15px 0 0;
+}
+table:nth-child(1) tr td:nth-child(2)::after {
+    content: '•••';
+    display: block;
+    color: #BEBEBE;
+    position: absolute;
+    font-size: 17px;
+    right: 0;
+    top: 0;
+    margin: 15px 15px 0 0;
+}
+table:nth-child(3) tr td:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-image: url(box.png);
+    background-size: 18px;
+    left: 3%;
+    top: 30%;
+}
+
+.search-case {
+    color: #5c5b61;
+    border: none;
+    width: 200px;
+    right: 1%;
+    position: absolute;
+    top: 10%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #3c3b41;
+    padding-left: 35px;
+    box-sizing: border-box;
+}
+.icon-search::before {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-image: url(search.png);
+    background-size: 13px;
+    right: 45%;
+    top: 33%;
+    z-index: 1;
+}
