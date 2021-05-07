@@ -1,20 +1,19 @@
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 .conteiner {
-   height: 4500px;
-   width:1600px ;
-   background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%); 
-  
+    width: 1500px;
+     background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
 }
 
 .content {
     position: absolute;
-    width: 90%; 
+    width: 90%;
     height: 4500px;
-    
+  
 }
 
 .header {
@@ -31,7 +30,7 @@
     height: 468px;
     left: 363px;
     top: 286px;
-    background-image: url(image/image\ header.png);
+    background-image: url(./img/image\ header.png);
 }
 
 .header-component {
@@ -457,10 +456,10 @@ a {
     color: #4B5D68;
 }
 
-.element_four-box2 {
+.element_four-box2 { position:absolute ;
     width: 410px;
     height: 60px;
-    left: 302px;
+    left: 60%;
     display: flex;
     justify-content: space-between;
 }
@@ -475,7 +474,7 @@ a {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 160%;
+    line-height: 100%;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
