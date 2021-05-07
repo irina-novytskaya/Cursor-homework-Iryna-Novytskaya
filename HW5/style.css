@@ -3,10 +3,12 @@
     margin: 0px;
     padding: 0px;
 }
-
+body{
+    overflow-x: hidden
+}
 .conteiner {
     width: 1500px;
-     background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+    background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
 }
 
 .content {
