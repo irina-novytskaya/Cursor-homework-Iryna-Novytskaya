@@ -33,7 +33,7 @@ header {
     width: 1440px;
     height: 900px;
     display: grid;
-    grid-template-columns: 12% 45% 45%;
+    grid-template-columns: 12% 44% 44%;
 }
 
 .section_menu_content {
