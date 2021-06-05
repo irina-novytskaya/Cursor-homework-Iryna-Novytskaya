@@ -1,0 +1,83 @@
+body{
+height: 1480px;
+width: 1440px;
+left: -720px;
+top: -513px;
+border-radius: 0px;
+background: #FFFFFF;
+}
+.download_app{
+    position: absolute;
+    height: 500px;
+    width: 1440px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    background: #ED4C5C;
+
+}
+.text_content_title {
+    position: absolute;
+    height: 107px;
+    width: 445px;
+    left: 165px;
+    top: 122px;
+    font-family: Lato;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 600;
+    font-style: normal;
+    color: #FFFFFF;
+}
+.content_text {
+    position: absolute;
+    width: 445px;
+    height: 64px;
+left: 165px;
+top: 253px;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    color: #FFFFFF;
+}
+.photo1 { 
+position: absolute;
+height: 311px;
+width: 445px;
+left: 735px;
+top: 94px;
+border-radius: 15px;
+}
+.photo2 {
+position: absolute;
+height: 267px;
+width: 383px;
+left: 691px;
+top: 116px;
+border-radius: 15px;
+opacity: 0.5;
+}
+.photo3 {
+position: absolute;
+height: 267px;
+width: 383px;
+left: 841px;
+top: 116px;
+border-radius: 15px;
+}
+
+.icon_1 {
+    position: absolute;
+    margin: 357px 1245px 111px 163px;
+
+}
+.icon_2 {
+    position: absolute;
+    margin: 357px 1190px 111px 218px;
+
+}
+.icon_3 {
+    position: absolute;
+    margin: 361px 1143px 115px 273px;
+  
