@@ -40,14 +40,14 @@ console.log(averageValuePrice);
 //  9.Створіть змінну, в якої збережіть випадкову знижку (використовуйте функцію Math.random).
 const percentageDiscount  =Math.round (Math.random()* 50);
 console.log(percentageDiscount);
-const discontInMoney = Math.trunc((sumPrice /100) *percentageDiscount)
-console.log(discontInMoney)
+const discountInMoney = Math.trunc((sumPrice /100) *percentageDiscount)
+console.log(discountInMoney)
 //  10.Зробіть клієнту випадкову знижку та виведіть суму до оплати округлену до 2 знаків після коми.
-const discountedPrice = (sumPrice -discontInMoney).toFixed( 2 ) ;
+const discountedPrice = (sumPrice -discountInMoney).toFixed( 2 ) ;
 console.log(discountedPrice);
 
 //  11.Виведіть чистий прибуток, якщо клієнт заплатив зі знижкою та собівартість товарів рівно в два рази нижче їх ціни?
-const profit = ((sumPrice /2) -discontInMoney) .toFixed( 2 ) ;
+const profit = ((sumPrice /2) -discountInMoney) .toFixed( 2 ) ;
 console.log(profit);
 
 //Advanced
@@ -61,6 +61,6 @@ document.writeln(`Домашнє завдання #1: Змінні та типи
   7. Решта з 500 при покупці всіх товарів: ${sumOfRest500}; <br>
   8. Середнє значення цін: ${averageValuePrice}; <br>
   9. Випадкова знижка в відcотках: ${percentageDiscount}; <br>
-  10.Випадкова знижка в грошах: ${discontInMoney}; <br>
+  10.Випадкова знижка в грошах: ${discountInMoney}; <br>
   11.Сума до оплати, з урахуванням знижки: ${discountedPrice}; <br>
   12.Чистий прибуток: ${profit};<br>`)
