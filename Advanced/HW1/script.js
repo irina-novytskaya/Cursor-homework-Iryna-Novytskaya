@@ -3,15 +3,15 @@ const priceKeyboard = 123.965;
 const priceMouse = 90.2345;
 
 //  1.Використовуючи вбудований об'єкт Math – виведіть максимальне число
-const maxPrice = Math.max(priceCable , priceKeyboard , priceMouse);
+const maxPrice = Math.max(priceCable, priceKeyboard, priceMouse);
 console.log(maxPrice);
 
 //  2.Використовуючи вбудований об'єкт Math – виведіть мінімальне число
-const minPrice = Math.min(priceCable , priceKeyboard , priceMouse);
+const minPrice = Math.min(priceCable, priceKeyboard, priceMouse);
 console.log(minPrice);
 
 //  3.Складіть вартість всіх товарів, помістіть її в змінну та виведіть цю суму
-const sumPrice = (priceCable+ priceKeyboard+ priceMouse);
+const sumPrice = (priceCable + priceKeyboard + priceMouse);
 console.log(sumPrice)
 
 //  4.Відкиньте копійки у всіх товарів, потім – складіть цілу частину вартості 
