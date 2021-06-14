@@ -76,11 +76,11 @@ function isPalyndrom(str) {
 
 
 
-
-console.log(`Функція №1 : ${getMaxDigit(1239426)}`); 
-console.log(`Функція #2 : ${pow(3,3)}`);
-console.log(`Функція №3 : ${alignCase("влАд")}`); 
-console.log(`Функція №4 : ${netProfit(1000)}`); 
-console.log(`Функція №5 : ${getRandomInRange(3,16)}`); 
-console.log(`Функція №6 : ${countLetter("Асталавіста","а")}`);
-console.log(`Функція №10 : ${isPalyndrom("Мадам")}`);
+document.writeln(`Домашнє завдання #2: Функції <br>
+Функція №1 : ${getMaxDigit(1239426)}; <br>
+Функція №2 : ${pow(3,3)};<br>
+Функція №3 : ${alignCase("влАд")}; <br>
+Функція №4 : ${netProfit(1000)}; <br>
+Функція №5 : ${getRandomInRange(1,10)}; <br>
+Функція №6 : ${countLetter("Асталавіста","а")};<br>
+Функція №10 : ${isPalyndrom("Мадам")}<br>`)
