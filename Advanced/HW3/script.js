@@ -7,9 +7,7 @@ function getMaxDigit(num){
    for(let i = 0; i < number.length; i++) {
        if(maxDigit < number[i]) {
         maxDigit = number[i];
-       } else {
-           continue;
-       }
+       } 
    }
 return maxDigit;
  }
@@ -17,12 +15,19 @@ return maxDigit;
   Не використовуючи Math.pow та **. Використовуйте цикл*/
 
  function pow(N, M) {
-     result = N;
-    for (let i = 0; i < M; i++) {
-      result *= N;
+  if (N === 1 || M === 0) {
+    return 1;}
+    const power = Math.abs(M);
+    let result = N;
+    for (let i = 0; i < power - 1; i++) {
+        result *= N;
     }
-return result;
+    if (M < 0) {
+      return 1 / result;
+  } else {
+      return result;
   }
+};
 
  /* Фунукція 3.	Створити функцію, яка форматує ім'я,
   роблячи першу букву великою. ("влад" -> "Влад", "вЛАД" -> "Влад" і так далі);*/
@@ -78,7 +83,7 @@ function isPalyndrom(str) {
 
 document.writeln(`Домашнє завдання #2: Функції <br>
 Функція №1 : ${getMaxDigit(1239426)}; <br>
-Функція №2 : ${pow(3,3)};<br>
+Функція №2 : ${pow(3,-9)};<br>
 Функція №3 : ${alignCase("влАд")}; <br>
 Функція №4 : ${netProfit(1000)}; <br>
 Функція №5 : ${getRandomInRange(1,10)}; <br>
