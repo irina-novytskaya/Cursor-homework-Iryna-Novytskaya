@@ -2,8 +2,8 @@
  та виводить найбільшу цифру в цьому числі. Приклади: 1236 -> 6, 987 -> 9, 385 -> 8*/
 
 function getMaxDigit(num){
- number = (num.toString().split('').map(Number)); 
- maxDigit = 0;
+let number = (num.toString().split('').map(Number)); 
+ let maxDigit = 0;
    for(let i = 0; i < number.length; i++) {
        if(maxDigit < number[i]) {
         maxDigit = number[i];
@@ -40,8 +40,8 @@ return str[0].toUpperCase() + str.slice(1).toLowerCase() }
 (Податок = 18% + 1.5% -> 19.5%). Приклад: 1000 -> 805*/
   
 function netProfit(sum){
-     incomeTax = (sum / 100) * 18;
-     militaryFee = (sum / 100) * 1.5;
+  const incomeTax = (sum / 100) * 18;
+  const militaryFee = (sum / 100) * 1.5;
 return sum - (incomeTax + militaryFee);
    }
 
@@ -49,15 +49,15 @@ return sum - (incomeTax + militaryFee);
  Приклад: getRandomNumber(1, 10) -> 5*/
 
 function getRandomInRange(N, M) {
-     max = Math.max(N, M);
-     min = Math.min(N, M);
+    let max = Math.max(N, M);
+    let min = Math.min(N, M);
 return Math.floor(Math.random() * (max - min + 1)) + min;
   }
  /* Фунукція 6.	Створити функцію, яка рахує скільки разів певна буква повторюється в слові.
   Приклад: countLetter("а", "Асталавіста") -> 4*/
   
   function countLetter ( word, letter){
-    count = 0;
+   let count = 0;
     word = word.toLowerCase();
     for(let i = 0; i < word.length; i++) {
        if(letter === word[i]) {
@@ -70,8 +70,8 @@ return count;
   isPalyndrom("кокос") -> false, isPalyndrom("Я несу гусеня") -> true*/
 
 function isPalyndrom(str) {
-     string = str.toLowerCase();
-     stringReverse =  string.split('').reverse().join('')
+    let string = str.toLowerCase();
+    let stringReverse =  string.split('').reverse().join('')
      if(string === stringReverse) {
          return true;
      } else {

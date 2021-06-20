@@ -11,15 +11,17 @@ const marks = [4, 5, 5, 3, 4, 5];
 
 /*Розділіть студентів на пари(хлопець + дівчина) для работи над проєктом.
  У вас повинен вийти вкладений масив з парами студентів: [["Олександр", "Олена"], [..], [...]];*/
-function createCouple (students){
-    const coupleOfStudents = [
-   ([students[0], students[2]]),
-    ([students[1], students[3]]),
-    ([students[4], students[5]]),
-];
+
+const girls = students.filter(student => student[student.length - 1] === 'а');
+const boys = students.filter(student => student[student.length - 1] !== 'а');
+ function createCouple (boys, girls){
+    const coupleOfStudents = [];
+    for (let i = 0; i < boys.length; i++) {
+        coupleOfStudents[i] = [boys[i], girls[i]];
+    }
     return coupleOfStudents;
 }
-const couple = createCouple(students);
+const couple = createCouple(boys, girls);
 
 
 /*Зіставте пари з попереднього завдання та теми проєктів, над якими студенти будуть працювати.
