@@ -38,6 +38,7 @@ function getSubjects(student) {
   }
   return subjects;
 }
+console.log(`Функція 1 : ${getSubjects(students[0])}`);
 // 2. Створіть функцію getAverageMark(students[0]) --> 3.79 – яка поверне середню оцінку по усім предметам для переданого студента НЕ МАСИВА СТУДЕНТІВ.
 //  Оцінку округліть до 2ого знаку. 
 
@@ -51,7 +52,7 @@ function getAverageMark(student) {
 	return averageMark;
 }
 
-console.log(`Задача №02 : ${getAverageMark(students[0])}`);
+console.log(`Функція 2 : ${getAverageMark(students[0])}`);
 
 // 3. Створіть функцію getStudentInfo(students[0]) --> { "course": 3, "name": "Tanya", "averageMark": 3.79} –
 //  яка повертає інформацію загального виду по переданому студенту (вам знадобиться функція з попереднього завдання). 
@@ -66,7 +67,7 @@ function getStudentInfo(student) {
 	};
 	return currentStudent; 
 }
-
+console.log("Функція 3 : ", getStudentInfo(students[0]));
 
  
 // 4.Ствроіть функцію getStudentsNames(students) --> ["Anton", "Tanya, "Victor"] – яка повертає імена студентів у алфавітному порядку.
@@ -78,21 +79,21 @@ function getStudentsNames(students) {
 	}
 	return studentsNames.sort();
 }
-
+console.log(`Функція 4 : ${getStudentsNames(students)}`);
 // 5. Створіть функцію getBestStudent(students) --> "Anton" – яка повертає кращого студента зі списку по показнику середньої оцінки.
 
 function getBestStudent(students) {
-	const pairsStudentAverageMark = [];
+	const  coupleStudentAverageMark = [];
 	for (student of students) {
-		let pairStudentAverageMark = [];
-		pairStudentAverageMark.push(student.name);
-		pairStudentAverageMark.push(getAverageMark(student));
-		pairsStudentAverageMark.push(pairStudentAverageMark);
+		let  coupleStudentAverageMark = [];
+    coupleStudentAverageMark.push(student.name);
+    coupleStudentAverageMark.push(getAverageMark(student));
+    coupleStudentAverageMark.push(coupleStudentAverageMark);
 	}
-	pairsStudentAverageMark.sort((a, b) => b[1] - a[1]);
-	return pairsStudentAverageMark[0][0];
+  coupleStudentAverageMark.sort((a, b) => b[1] - a[1]);
+	return  coupleStudentAverageMark[0][0];
 }
-
+console.log(`Функція 5 : ${getBestStudent(students)}`);
 
 // 6. Створіть функцію calculateWordLetters("тест") --> { "т": 2, "е": 1, "с": 1 } – яка повертає обє'кт, в якому ключі це букви у слові, а значення – кількість їх повторень.
 
@@ -105,9 +106,5 @@ function calculateWordLetters(string) {
 	}
 	return wordLetters;
 }
-console.log(`Задача №01 : ${getSubjects(students[0])}`);
-console.log(`Задача №02 : ${getAverageMark(students[0])}`);
-console.log("Задача №03 : ", getStudentInfo(students[0]));
-console.log(`Задача №04 : ${getStudentsNames(students)}`);
-console.log(`Задача №05 : ${getBestStudent(students)}`);
-console.log("Задача №06 : ", calculateWordLetters("тест"));
+
+console.log("Функція 6 : ", calculateWordLetters("тест"));
