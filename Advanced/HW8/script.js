@@ -1,13 +1,12 @@
 
 // 1. У стдентів повинні бути наступні властивості: university, course, fullName, вони передаються при створенні студента(в конструктор).//
 
-const marks = [5, 4, 4, 5];
 class Student {
   constructor(university, course, fullName) {
     this.university = university;
     this.course = course;
     this.fullName = fullName;
-    this.marks = marks;
+    this.marks =  [5, 4, 4, 5];
     this.isDismissed = false;
   }
 
