@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(207, 225, 226);
+    
+    }
+    
+    
+    .container{
+        display: flex;
+        width: 250px;
+        flex-wrap: wrap;
+        margin: 120px auto;
+    
+    }
+    
+    .square{
+        width: 50px;
+        height: 50px;
+    }
