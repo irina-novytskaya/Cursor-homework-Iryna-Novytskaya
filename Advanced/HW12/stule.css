@@ -38,3 +38,9 @@ html {
     font-size: 4rem;
   }
   
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #91ff00;
+  }
