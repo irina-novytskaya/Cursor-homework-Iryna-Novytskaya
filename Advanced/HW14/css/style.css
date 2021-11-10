@@ -1,0 +1,84 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    font-size: 16px;
+     background-color: rgb(13, 11, 20);
+} 
+ 
+ .main{
+     width: 100%;
+     height: 100vh;
+     background: url("../img/bg.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding-top: 10vh;
+     text-align: center;
+ }
+
+ .result{
+    display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     width: 90%;
+     margin: auto;
+ }
+ .buttons{
+     width: 70%;
+     margin: 30vh auto;
+     text-align: center;
+ }
+ .button{
+     width: 130px;
+     height: 60px;
+     margin-left: 30px;
+     margin-bottom: 20px;
+     border: 0;
+     background-color: rgba(161, 128, 252);
+     font-size: 20px;
+     font-family: arial;
+     font-weight: normal;
+     transition: all 0.3s ease;
+ }
+ .button:hover{
+     cursor: pointer;
+     -webkit-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     transform: scale(1.1);
+ }
+
+ h1{
+     font-size: 50px;
+     color: rgb(111, 62, 245);
+     margin-bottom: 50px;
+ }
+
+.characters__item,
+.planets__item{
+    width: 160px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin: 0 20px 20px 0;
+    padding: 10px 5px;
+}
+
+.characters__item-img{
+    width: 100%;
+}
+
+#next-planets-button{
+    display: none;
+    margin: auto;
+}
+
+.characters__item-name{
+    font-weight: 700;
+    font-size: 16px;
+    padding: 5px 0;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 5px;
+}
+
+.characters__item-img{
+    padding-top: 10px;
+}
